@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const user = prompt("Qual seu usuário?");
+
+      if (user === "Admin") {
+        const pass = prompt("Qual sua senha?");
+        if (pass === "UniBH") alert("Bem vindo!");
+        else if (!pass) alert("Cancelado");
+        else alert("Senha aincorreta!");
+      } else if (!user) {
+        alert("Cancelado");
+      } else {
+        alert("Não conheço você");
+      }
+    </script>
+  </body>
+</html>

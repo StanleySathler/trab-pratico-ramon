@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const somarValores = (arr) =>
+        arr.reduce((prev, curr) => prev + Number(curr), 0);
+
+      const values = [];
+      while (true) {
+        const value = prompt("Entre com um valor");
+        if (!value || isNaN(value)) break;
+        values.push(value);
+      }
+
+      alert(`Soma: ${somarValores(values)}`);
+    </script>
+  </body>
+</html>
