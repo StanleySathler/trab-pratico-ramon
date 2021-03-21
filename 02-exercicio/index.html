@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const avg = (array) =>
+        array.reduce((prev, curr) => prev + curr, 0) / array.length;
+
+      const grades = prompt('Notas: ');
+      if (grades) {
+        const numbers = grades.split(',').map(g => Number(g));
+        alert(avg(numbers));
+      }
+    </script>
+  </body>
+</html>

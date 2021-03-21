@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const str = prompt("Digite idades. Separe por virgula");
+      const ages = str.split(',').map(n => Number(n));
+      const over18 = ages.filter(n => n >= 18);
+      const under18 = ages.filter(n => n < 18);
+      alert(`Total maiores: ${over18.length} | Total menores: ${under18.length}`);
+    </script>
+  </body>
+</html>

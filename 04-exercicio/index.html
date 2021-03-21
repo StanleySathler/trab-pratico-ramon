@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const str = prompt("Digite 5 numeros. Separe por virgula");
+      const numbers = str.split(',').map(n => Number(n));
+      alert(Math.max.apply(null, numbers));
+    </script>
+  </body>
+</html>
